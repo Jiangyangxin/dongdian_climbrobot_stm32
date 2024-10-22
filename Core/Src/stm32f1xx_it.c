@@ -19,12 +19,11 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
-#include "cmd_tsk.h"
 #include "stm32f1xx_it.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "cmd_tsk.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

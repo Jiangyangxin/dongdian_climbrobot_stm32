@@ -20,7 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "can.h"
-
+#include "VESC_CAN.h"
 // 交互复位信息
 QueueHandle_t reset_flag;
 moto_measure_t moto_chassis[3] = {0};
@@ -57,6 +57,8 @@ void reset_total_angle(moto_measure_t *ptr)
     ptr->round_cnt = 0;
 }
 
+//以上函数仅用于大疆电机
+
 void CAN_Start_Trans(void)
 {
     reset_flag = xQueueCreate(3, 1);
@@ -64,25 +66,25 @@ void CAN_Start_Trans(void)
     CAN_FilterTypeDef sFilterConfig;
     HAL_StatusTypeDef HAL_Status;
     /*********************can1*********************/
-    uint16_t StdIdArray1[3] = {CAN_Moto1_ID, CAN_Moto2_ID, CAN_Moto3_ID};
-    uint16_t mask, num, tmp, i;
+    // uint16_t StdIdArray1[3] = {CAN_Moto1_ID, CAN_Moto2_ID, CAN_Moto3_ID};
+    // uint16_t mask, num, tmp, i;
 
     // 下面开始计算屏蔽码
-    mask = 0x7ff; // 下面开始计算屏蔽码
-    num = sizeof(StdIdArray1) / sizeof(StdIdArray1[0]);
-    for (i = 0; i < num; i++) // 屏蔽码位StdIdArray[]数组中所有成员的同或结果
-    {
-        tmp = StdIdArray1[i] ^ (~StdIdArray1[0]); // 所有数组成员与第0个成员进行同或操作
-        mask &= tmp;
-    }
+    // mask = 0x7ff; // 下面开始计算屏蔽码
+    // num = sizeof(StdIdArray1) / sizeof(StdIdArray1[0]);
+    // for (i = 0; i < num; i++) // 屏蔽码位StdIdArray[]数组中所有成员的同或结果
+    // {
+    //     tmp = StdIdArray1[i] ^ (~StdIdArray1[0]); // 所有数组成员与第0个成员进行同或操作
+    //     mask &= tmp;
+    // }
 
-    sFilterConfig.FilterIdHigh = ((StdIdArray1[0]) << 5); // 验证码可以设置为StdIdArray[]数组中任意一个，这里使用StdIdArray[0]作为验证码
-    //    sFilterConfig.FilterIdHigh = 0;
+    // sFilterConfig.FilterIdHigh = ((StdIdArray1[0]) << 5); // 验证码可以设置为StdIdArray[]数组中任意一个，这里使用StdIdArray[0]作为验证码
+    sFilterConfig.FilterIdHigh = 0;
     sFilterConfig.FilterIdLow = 0;
-    //    sFilterConfig.FilterMaskIdHigh = 0;
-    //    sFilterConfig.FilterMaskIdLow = 0; 		//只接收数据帧
-    sFilterConfig.FilterMaskIdHigh = (mask << 5);
-    sFilterConfig.FilterMaskIdLow = 0 | 0x02;              // 只接收数据帧
+    sFilterConfig.FilterMaskIdHigh = 0;
+    sFilterConfig.FilterMaskIdLow = 0; 		//只接收数据帧
+    // sFilterConfig.FilterMaskIdHigh = (mask << 5);
+    // sFilterConfig.FilterMaskIdLow = 0 | 0x02;              // 只接收数据帧
     sFilterConfig.FilterFIFOAssignment = CAN_FILTER_FIFO1; // 设置通过的数据帧进入到FIFO0中
     sFilterConfig.FilterBank = 0;
     sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;  // 配置为掩码模式
@@ -122,32 +124,45 @@ void CAN_SendMsg(uint16_t id, uint8_t TxData[])
 void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {
     uint8_t aRxData[8], i, flag;
+    Frame Frame_rcv;
+
     CAN_RxHeaderTypeDef hCAN1_RxHeader;
-    if (hcan->Instance == CAN1)
+    HAL_StatusTypeDef	HAL_RetVal;
+    HAL_RetVal=HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &hCAN1_RxHeader, aRxData);
+    if (hcan->Instance == CAN1 && HAL_RetVal== HAL_OK)
     {
-        HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &hCAN1_RxHeader, aRxData);
-        switch (hCAN1_RxHeader.StdId)
+//        HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &hCAN1_RxHeader, aRxData);
+        if(hCAN1_RxHeader.IDE == CAN_ID_EXT) 
         {
-        case CAN_Moto1_ID:
-        case CAN_Moto2_ID:
-        case CAN_Moto3_ID:
-        {
-            i = hCAN1_RxHeader.StdId - CAN_Moto1_ID;
-            moto_chassis[i].id = i;
-            moto_chassis[i].msg_cnt++ <= 50 ? get_moto_offset(&moto_chassis[i], aRxData) : get_moto_measure(&moto_chassis[i], aRxData);
-            // 接收到触发信息，M2006角度复位
-            if (pdTRUE == xQueueReceiveFromISR(reset_flag, (void *)&flag, 0))
-            {
-                reset_total_angle(&moto_chassis[flag]);
-            }
-            if ( moto_chassis[i].msg_cnt % 5 == 0)
-            {
-                BaseType_t pxHigherPriorityTaskWoken;
-                xQueueSendFromISR(can1RxQueueHandle, &moto_chassis[i], &pxHigherPriorityTaskWoken);
-                portYIELD_FROM_ISR(pxHigherPriorityTaskWoken);
-            }
+            Frame_rcv.id.all   = hCAN1_RxHeader.ExtId;
+            Frame_rcv.isRemote = hCAN1_RxHeader.RTR == CAN_RTR_DATA ? 0 : 1;
+            Frame_rcv.length   = hCAN1_RxHeader.DLC;
+            memset(Frame_rcv.data.chars, 0, 8);  //先清空再copy
+            memcpy(Frame_rcv.data.chars, aRxData, Frame_rcv.length);
+            ProcessVESCFrame(&Frame_rcv);
         }
-        break;
-        }
+        // switch (hCAN1_RxHeader.StdId)
+        // {
+        // case CAN_Moto1_ID:
+        // case CAN_Moto2_ID:
+        // case CAN_Moto3_ID:
+        // {
+        //     i = hCAN1_RxHeader.StdId - CAN_Moto1_ID;
+        //     moto_chassis[i].id = i;
+        //     moto_chassis[i].msg_cnt++ <= 50 ? get_moto_offset(&moto_chassis[i], aRxData) : get_moto_measure(&moto_chassis[i], aRxData);
+        //     // 接收到触发信息，M2006角度复位
+        //     if (pdTRUE == xQueueReceiveFromISR(reset_flag, (void *)&flag, 0))
+        //     {
+        //         reset_total_angle(&moto_chassis[flag]);
+        //     }
+        //     if ( moto_chassis[i].msg_cnt % 5 == 0)
+        //     {
+        //         BaseType_t pxHigherPriorityTaskWoken;
+        //         xQueueSendFromISR(can1RxQueueHandle, &moto_chassis[i], &pxHigherPriorityTaskWoken);
+        //         portYIELD_FROM_ISR(pxHigherPriorityTaskWoken);
+        //     }
+        // }
+        // break;
+        // }
     }
 }

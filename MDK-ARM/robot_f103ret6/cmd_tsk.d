@@ -65,4 +65,4 @@ robot_f103ret6/cmd_tsk.o: ..\App\Src\cmd_tsk.cpp ..\App\Inc\cmd_tsk.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h
+  ..\Bsp\Inc\can.h ..\Bsp\Inc\VESC_CAN.h

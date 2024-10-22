@@ -356,6 +356,7 @@ void StartDefaultTask(void *argument)
             else if (cmdEthInfo.type == BoardType::ioState)
             {
                 MX_IO_Init();
+                VESC_SANDING_INIT();
             }
             // check task to ethernet 5001 recv task, DO NOT deal uart cmd!
             res = 0xF;

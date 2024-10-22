@@ -67,6 +67,7 @@ robot_f103ret6/adsorption_motion_tsk.o: \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h ..\Bsp\Inc\pid.h ..\Bsp\Inc\feedForwardPid.h \
-  ..\Bsp\Inc\stagePid.h ..\Core\Inc\physparams.h \
-  ..\App\Inc\ethernet_tsk.h ..\App\Inc\cmd_tsk.h
+  ..\Bsp\Inc\can.h ..\Bsp\Inc\VESC_CAN.h ..\Bsp\Inc\pid.h \
+  ..\Bsp\Inc\feedForwardPid.h ..\Bsp\Inc\stagePid.h \
+  ..\Core\Inc\physparams.h ..\App\Inc\ethernet_tsk.h \
+  ..\App\Inc\cmd_tsk.h

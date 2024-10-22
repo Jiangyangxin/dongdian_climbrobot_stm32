@@ -66,5 +66,6 @@ robot_f103ret6/steerwheel_tsk.o: ..\App\Src\steerwheel_tsk.cpp \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h ..\Bsp\Inc\pid.h ..\Bsp\Inc\feedForwardPid.h \
-  ..\Core\Inc\physparams.h ..\App\Inc\ethernet_tsk.h
+  ..\Bsp\Inc\can.h ..\Bsp\Inc\VESC_CAN.h ..\Bsp\Inc\pid.h \
+  ..\Bsp\Inc\feedForwardPid.h ..\Core\Inc\physparams.h \
+  ..\App\Inc\ethernet_tsk.h

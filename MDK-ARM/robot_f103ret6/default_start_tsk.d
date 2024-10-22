@@ -65,7 +65,7 @@ robot_f103ret6/default_start_tsk.o: ..\App\Src\default_start_tsk.cpp \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h ..\Bsp\Inc\w5500_dev.h \
+  ..\Bsp\Inc\can.h ..\Bsp\Inc\VESC_CAN.h ..\Bsp\Inc\w5500_dev.h \
   ..\Drivers\EthDriver\Ethernet\socket.h \
   ..\Drivers\EthDriver\Ethernet\wizchip_conf.h \
   ..\Drivers\EthDriver\Ethernet\W5500\w5500.h \

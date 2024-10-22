@@ -10,6 +10,8 @@ uint8_t txBuf[SEND_BUF_SIZE];
 uint8_t rxDealBuf[RECV_BUF_SIZE];
 uint8_t txDealBuf[SEND_BUF_SIZE];
 
+uint8_t io_state_cmd=0;
+
 volatile TSRecord sysTs;
 SemaphoreHandle_t xMutex;
 
@@ -251,6 +253,7 @@ namespace TskEth
                     // IO write 0 亮 1 灭
                     HAL_GPIO_WritePin(LED_0_GPIO_Port, LED_0_Pin, (GPIO_PinState)(ioCmd->state & 0x1));
                     HAL_GPIO_WritePin(LED_1_GPIO_Port, LED_1_Pin, (GPIO_PinState)((ioCmd->state & 0x2) >> 1));
+                    io_state_cmd=ioCmd->state;
                 }
                 else if (type == BoardType::steeringCurrent)
                 {
@@ -317,7 +320,7 @@ namespace TskEth
                     }
 
                     void *p = ioVal;
-										pack_struct(p, IOValName, (const char *)IOValTypeRecord, IOValMemberNum, 0);
+                    pack_struct(p, IOValName, (const char *)IOValTypeRecord, IOValMemberNum, 0);
                 }
                 else if (type == BoardType::steeringCurrent)
                 {

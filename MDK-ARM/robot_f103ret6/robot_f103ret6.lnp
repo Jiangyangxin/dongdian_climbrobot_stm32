@@ -1,10 +1,10 @@
 --cpu Cortex-M3
 "robot_f103ret6\startup_stm32f103xe.o"
+"robot_f103ret6\main.o"
 "robot_f103ret6\freertos.o"
 "robot_f103ret6\stm32f1xx_it.o"
 "robot_f103ret6\stm32f1xx_hal_msp.o"
 "robot_f103ret6\stm32f1xx_hal_timebase_tim.o"
-"robot_f103ret6\main.o"
 "robot_f103ret6\stm32f1xx_hal_gpio_ex.o"
 "robot_f103ret6\stm32f1xx_hal_adc.o"
 "robot_f103ret6\stm32f1xx_hal_adc_ex.o"
@@ -50,6 +50,7 @@
 "robot_f103ret6\feedforwardpid.o"
 "robot_f103ret6\pid.o"
 "robot_f103ret6\stagepid.o"
+"robot_f103ret6\vesc_can.o"
 --strict --scatter "robot_f103ret6\robot_f103ret6.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

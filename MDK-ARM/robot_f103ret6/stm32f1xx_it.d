@@ -51,4 +51,5 @@ robot_f103ret6/stm32f1xx_it.o: ..\Core\Src\stm32f1xx_it.c \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdlib.h ..\Bsp\Inc\can.h \
-  ..\App\Inc\cmd_tsk.h ..\Core\Inc\stm32f1xx_it.h
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h ..\Bsp\Inc\VESC_CAN.h \
+  ..\Core\Inc\stm32f1xx_it.h ..\App\Inc\cmd_tsk.h

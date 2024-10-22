@@ -66,7 +66,8 @@ robot_f103ret6/ethernet_data_tsk.o: ..\App\Src\ethernet_data_tsk.cpp \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h ..\Drivers\EthDriver\Ethernet\socket.h \
+  ..\Bsp\Inc\can.h ..\Bsp\Inc\VESC_CAN.h \
+  ..\Drivers\EthDriver\Ethernet\socket.h \
   ..\Drivers\EthDriver\Ethernet\wizchip_conf.h \
   ..\Drivers\EthDriver\Ethernet\W5500\w5500.h \
   ..\Drivers\EthDriver\Ethernet\wizchip_conf.h ..\Bsp\Inc\w5500_dev.h \

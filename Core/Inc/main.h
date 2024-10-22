@@ -23,8 +23,7 @@
 #define __MAIN_H
 
 #ifdef __cplusplus
-extern "C"
-{
+extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
@@ -42,11 +41,12 @@ extern "C"
 #include <string.h>
 #include <stdlib.h>
 #include "can.h"
+#include  <math.h>
+#include "VESC_CAN.h"
+/* USER CODE END Includes */
 
-  /* USER CODE END Includes */
-
-  /* Exported types ------------------------------------------------------------*/
-  /* USER CODE BEGIN ET */
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
   typedef enum
   {
     idle,
@@ -136,22 +136,22 @@ extern "C"
     uint32_t state;     //
     uint64_t timestamp; // us
   } IOVal;
-  /* USER CODE END ET */
+/* USER CODE END ET */
 
-  /* Exported constants --------------------------------------------------------*/
-  /* USER CODE BEGIN EC */
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
 
-  /* USER CODE END EC */
+/* USER CODE END EC */
 
-  /* Exported macro ------------------------------------------------------------*/
-  /* USER CODE BEGIN EM */
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
 
-  /* USER CODE END EM */
+/* USER CODE END EM */
 
-  void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
-  /* Exported functions prototypes ---------------------------------------------*/
-  void Error_Handler(void);
+/* Exported functions prototypes ---------------------------------------------*/
+void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 
@@ -183,7 +183,7 @@ extern "C"
 #define FAN_EN_Pin GPIO_PIN_2
 #define FAN_EN_GPIO_Port GPIOB
 
-  /* USER CODE BEGIN Private defines */
+/* USER CODE BEGIN Private defines */
   extern ADC_HandleTypeDef hadc1, hadc2;
   extern DMA_HandleTypeDef hdma_adc1;
   extern TIM_HandleTypeDef htim1;
@@ -213,7 +213,7 @@ extern "C"
 #define LED_1_Pin GPIO_PIN_3
 #define LED_1_GPIO_Port GPIOA
 
-  /* USER CODE END Private defines */
+/* USER CODE END Private defines */
 
 #ifdef __cplusplus
 }

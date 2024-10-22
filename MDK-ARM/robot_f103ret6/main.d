@@ -65,4 +65,5 @@ robot_f103ret6/main.o: ..\Core\Src\main.cpp ..\Core\Inc\main.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h ..\App\Inc\cmd_tsk.h ..\Core\Inc\physparams.h
+  ..\Bsp\Inc\can.h ..\Bsp\Inc\VESC_CAN.h ..\App\Inc\cmd_tsk.h \
+  ..\Core\Inc\physparams.h
