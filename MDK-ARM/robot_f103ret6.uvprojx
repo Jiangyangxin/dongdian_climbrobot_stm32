@@ -781,9 +781,9 @@
               <FilePath>..\Bsp\Src\stagePid.cpp</FilePath>
             </File>
             <File>
-              <FileName>VESC_CAN.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Bsp\Src\VESC_CAN.c</FilePath>
+              <FileName>VESC_CAN.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Bsp\Src\VESC_CAN.cpp</FilePath>
             </File>
           </Files>
         </Group>

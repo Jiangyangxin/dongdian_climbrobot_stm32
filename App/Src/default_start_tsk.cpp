@@ -6,7 +6,7 @@
 #include "steerwheel_tsk.h"
 #include "cmd_tsk.h"
 #include <string.h>
-
+#include "VESC_CAN.h"
 char dbgStr[CMD_BUF_SIZE];
 uint8_t cmdRxBuf[CMD_BUF_SIZE];
 uint8_t cmdTxBuf[CMD_BUF_SIZE];
@@ -356,7 +356,7 @@ void StartDefaultTask(void *argument)
             else if (cmdEthInfo.type == BoardType::ioState)
             {
                 MX_IO_Init();
-                VESC_SANDING_INIT();
+							TskVESC::VESC_SANDING_INIT();
             }
             // check task to ethernet 5001 recv task, DO NOT deal uart cmd!
             res = 0xF;

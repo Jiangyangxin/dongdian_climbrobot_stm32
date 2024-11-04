@@ -66,7 +66,6 @@ robot_f103ret6/adsorption_fan_tsk.o: ..\App\Src\adsorption_fan_tsk.cpp \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h ..\Bsp\Inc\VESC_CAN.h ..\Bsp\Inc\pid.h \
-  ..\Core\Inc\physparams.h ..\App\Inc\ethernet_tsk.h \
-  ..\App\Inc\adsorption_motion_tsk.h ..\Bsp\Inc\feedForwardPid.h \
-  ..\Bsp\Inc\stagePid.h
+  ..\Bsp\Inc\can.h ..\Bsp\Inc\pid.h ..\Core\Inc\physparams.h \
+  ..\App\Inc\ethernet_tsk.h ..\App\Inc\adsorption_motion_tsk.h \
+  ..\Bsp\Inc\feedForwardPid.h ..\Bsp\Inc\stagePid.h

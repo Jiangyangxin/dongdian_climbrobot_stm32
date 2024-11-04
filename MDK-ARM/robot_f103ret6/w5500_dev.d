@@ -57,5 +57,4 @@ robot_f103ret6/w5500_dev.o: ..\Bsp\Src\w5500_dev.c ..\Bsp\Inc\w5500_dev.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdlib.h ..\Bsp\Inc\can.h \
-  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h ..\Bsp\Inc\VESC_CAN.h \
-  ..\App\Inc\cmd_tsk.h
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h ..\App\Inc\cmd_tsk.h

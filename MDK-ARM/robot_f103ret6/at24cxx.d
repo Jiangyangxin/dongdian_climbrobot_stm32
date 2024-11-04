@@ -53,4 +53,4 @@ robot_f103ret6/at24cxx.o: ..\Bsp\Src\at24cxx.c ..\Bsp\Inc\at24cxx.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdlib.h ..\Bsp\Inc\can.h \
-  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h ..\Bsp\Inc\VESC_CAN.h
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h

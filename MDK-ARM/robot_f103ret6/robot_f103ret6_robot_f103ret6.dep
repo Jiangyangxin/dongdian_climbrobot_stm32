@@ -1,8 +1,8 @@
 Dependencies for Project 'robot_f103ret6', Target 'robot_f103ret6': (DO NOT MODIFY !)
 CompilerVersion: 6140000::V6.14::ARMCLANG
 F (startup_stm32f103xe.s)(0x67177957)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto -c-gdwarf-3 -I ../Core/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 530" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F10X_HD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o robot_f103ret6/startup_stm32f103xe.o)
-F (..\Core\Src\main.cpp)(0x671779A6)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/main.o -MD)
-I (..\Core\Inc\main.h)(0x67176E41)
+F (..\Core\Src\main.cpp)(0x6721FA98)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/main.o -MD)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -44,7 +44,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -69,7 +69,6 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\App\Inc\cmd_tsk.h)(0x667AC2EA)
 I (..\Core\Inc\physparams.h)(0x66DAC720)
 F (../Core/Src/main.c)(0x671778A4)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/main_1.o -MD)
@@ -134,7 +133,7 @@ F (../Core/Src/freertos.c)(0x671775CE)(-xc -std=c99 --target=arm-arm-none-eabi -
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -142,7 +141,7 @@ I (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM3\portmacro.h)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x67176DC7)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -185,9 +184,8 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 F (../Core/Src/stm32f1xx_it.c)(0x67177A9E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/stm32f1xx_it.o -MD)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -225,7 +223,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -241,11 +239,10 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\Core\Inc\stm32f1xx_it.h)(0x667AC2EC)
 I (..\App\Inc\cmd_tsk.h)(0x667AC2EA)
 F (../Core/Src/stm32f1xx_hal_msp.c)(0x667AC2EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/stm32f1xx_hal_msp.o -MD)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -283,7 +280,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -299,7 +296,6 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 F (../Core/Src/stm32f1xx_hal_timebase_tim.c)(0x667AC2EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/stm32f1xx_hal_timebase_tim.o -MD)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
@@ -1039,7 +1035,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x67176DC7)(-xc -std=c
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1053,7 +1049,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1068,7 +1064,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1081,7 +1077,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1095,7 +1091,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1110,7 +1106,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1126,7 +1122,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1146,7 +1142,7 @@ I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x67176DC6)
 I (D:\Keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
 I (D:\Keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1163,7 +1159,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1175,7 +1171,7 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/port.c)(0x67
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1199,7 +1195,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
 I (..\Drivers\EthDriver\Ethernet\W5500\w5500.h)(0x667AC34E)
 F (..\App\Src\adsorption_fan_tsk.cpp)(0x66DACC8E)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/adsorption_fan_tsk.o -MD)
 I (..\App\Inc\adsorption_fan_tsk.h)(0x667AC2EA)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1241,7 +1237,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1266,7 +1262,6 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\Bsp\Inc\pid.h)(0x667AC2EA)
 I (..\Core\Inc\physparams.h)(0x66DAC720)
 I (..\App\Inc\ethernet_tsk.h)(0x66B334C9)
@@ -1275,7 +1270,7 @@ I (..\Bsp\Inc\feedForwardPid.h)(0x667AC2EA)
 I (..\Bsp\Inc\stagePid.h)(0x66A39062)
 F (..\App\Src\adsorption_motion_tsk.cpp)(0x66B37E2D)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/adsorption_motion_tsk.o -MD)
 I (..\App\Inc\adsorption_motion_tsk.h)(0x66A38D61)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1317,7 +1312,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1342,7 +1337,6 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\Bsp\Inc\pid.h)(0x667AC2EA)
 I (..\Bsp\Inc\feedForwardPid.h)(0x667AC2EA)
 I (..\Bsp\Inc\stagePid.h)(0x66A39062)
@@ -1351,7 +1345,7 @@ I (..\App\Inc\ethernet_tsk.h)(0x66B334C9)
 I (..\App\Inc\cmd_tsk.h)(0x667AC2EA)
 F (..\App\Src\cmd_tsk.cpp)(0x667AC2EA)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/cmd_tsk.o -MD)
 I (..\App\Inc\cmd_tsk.h)(0x667AC2EA)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1393,7 +1387,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1418,10 +1412,9 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
-F (..\App\Src\ethernet_data_tsk.cpp)(0x67173236)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/ethernet_data_tsk.o -MD)
+F (..\App\Src\ethernet_data_tsk.cpp)(0x6722F283)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/ethernet_data_tsk.o -MD)
 I (..\App\Inc\ethernet_tsk.h)(0x66B334C9)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1463,7 +1456,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1488,7 +1481,6 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\Drivers\EthDriver\Ethernet\socket.h)(0x667AC34C)
 I (..\Drivers\EthDriver\Ethernet\wizchip_conf.h)(0x667AC34E)
 I (..\Drivers\EthDriver\Ethernet\W5500\w5500.h)(0x667AC34E)
@@ -1497,7 +1489,7 @@ I (..\Core\Inc\physparams.h)(0x66DAC720)
 I (..\App\Inc\cmd_tsk.h)(0x667AC2EA)
 F (..\App\Src\steerwheel_tsk.cpp)(0x66D6DB84)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/steerwheel_tsk.o -MD)
 I (..\App\Inc\steerwheel_tsk.h)(0x667AC2EA)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1539,7 +1531,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1564,13 +1556,12 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\Bsp\Inc\pid.h)(0x667AC2EA)
 I (..\Bsp\Inc\feedForwardPid.h)(0x667AC2EA)
 I (..\Core\Inc\physparams.h)(0x66DAC720)
 I (..\App\Inc\ethernet_tsk.h)(0x66B334C9)
-F (..\App\Src\default_start_tsk.cpp)(0x67171F36)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/default_start_tsk.o -MD)
-I (..\Core\Inc\main.h)(0x67176E41)
+F (..\App\Src\default_start_tsk.cpp)(0x672215BE)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/default_start_tsk.o -MD)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1612,7 +1603,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1637,7 +1628,6 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\Bsp\Inc\w5500_dev.h)(0x667AC2EA)
 I (..\Drivers\EthDriver\Ethernet\socket.h)(0x667AC34C)
 I (..\Drivers\EthDriver\Ethernet\wizchip_conf.h)(0x667AC34E)
@@ -1651,6 +1641,7 @@ I (..\Bsp\Inc\feedForwardPid.h)(0x667AC2EA)
 I (..\Bsp\Inc\stagePid.h)(0x66A39062)
 I (..\App\Inc\steerwheel_tsk.h)(0x667AC2EA)
 I (..\App\Inc\cmd_tsk.h)(0x667AC2EA)
+I (..\Bsp\Inc\VESC_CAN.h)(0x672215A7)
 F (..\Bsp\Src\at24cxx.c)(0x667AC2EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/at24cxx.o -MD)
 I (..\Bsp\Inc\at24cxx.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\stdbool.h)(0x5DDFFD72)
@@ -1688,11 +1679,11 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_spi.h)(0x67176DD0)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h)(0x67176DD0)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x67176DD0)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1708,9 +1699,8 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
-F (..\Bsp\Src\can.c)(0x6717645D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/can.o -MD)
-I (..\Core\Inc\main.h)(0x67176E41)
+F (..\Bsp\Src\can.c)(0x6722F52A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/can.o -MD)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1748,7 +1738,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1764,7 +1754,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
+I (..\Bsp\Inc\VESC_CAN.h)(0x672215A7)
 F (..\Bsp\Src\w5500_dev.c)(0x667AC2EC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/w5500_dev.o -MD)
 I (..\Bsp\Inc\w5500_dev.h)(0x667AC2EA)
 I (..\Drivers\EthDriver\Ethernet\socket.h)(0x667AC34C)
@@ -1806,11 +1796,11 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x67176DD0)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Bsp\Inc\at24cxx.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\stdbool.h)(0x5DDFFD72)
-I (..\Core\Inc\main.h)(0x67176E41)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1826,7 +1816,6 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Bsp\Inc\can.h)(0x667AC2EA)
 I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
 I (..\App\Inc\cmd_tsk.h)(0x667AC2EA)
 F (..\Bsp\Src\feedForwardPid.cpp)(0x667AC2EC)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/feedforwardpid.o -MD)
 I (..\Bsp\Inc\feedForwardPid.h)(0x667AC2EA)
@@ -1871,9 +1860,9 @@ I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__nullptr)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
-F (..\Bsp\Src\VESC_CAN.c)(0x6717637E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/vesc_can.o -MD)
-I (..\Bsp\Inc\VESC_CAN.h)(0x671720D5)
-I (..\Core\Inc\main.h)(0x67176E41)
+F (..\Bsp\Src\VESC_CAN.cpp)(0x6728AD2D)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3 -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f103ret6-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o robot_f103ret6/vesc_can.o -MD)
+I (..\Bsp\Inc\VESC_CAN.h)(0x672215A7)
+I (..\Core\Inc\main.h)(0x672214A3)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67176DD0)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x667AC2EC)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h)(0x67176DD0)
@@ -1881,6 +1870,8 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_def.h)(0x67176DD0)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h)(0x67176DD0)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h)(0x67176DD0)
 I (..\Drivers\CMSIS\Include\core_cm3.h)(0x67176DC6)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
 I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x67176DC6)
 I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x67176DC6)
@@ -1889,7 +1880,9 @@ I (D:\Keil5\ARM\ARMCLANG\include\arm_compat.h)(0x5E0CC2EC)
 I (D:\Keil5\ARM\ARMCLANG\include\arm_acle.h)(0x5E0CC318)
 I (..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h)(0x67176DD0)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67176DD0)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__nullptr)(0x5E0BB2B8)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h)(0x67176DD0)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h)(0x67176DD0)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h)(0x67176DD0)
@@ -1911,7 +1904,7 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x67176DD0)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x67176DC7)
-I (..\Core\Inc\FreeRTOSConfig.h)(0x671775CE)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x672205F4)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x67176DC7)
@@ -1922,8 +1915,17 @@ I (D:\Keil5\ARM\ARMCLANG\include\stdarg.h)(0x5DDFFD72)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x67176DC7)
 I (..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h)(0x67176DC7)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\stdio.h)(0x5DDFFD72)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\string.h)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stdlib.h)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
-I (..\Bsp\Inc\can.h)(0x667AC2EA)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\math.h)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\type_traits)(0x5E28C6CC)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\cstddef)(0x5E0BB2B6)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
+I (..\Bsp\Inc\can.h)(0x667AC2EA)

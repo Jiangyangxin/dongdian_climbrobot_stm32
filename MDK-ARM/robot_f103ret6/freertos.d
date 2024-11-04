@@ -51,4 +51,4 @@ robot_f103ret6/freertos.o: ..\Core\Src\freertos.c \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdlib.h ..\Bsp\Inc\can.h \
-  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h ..\Bsp\Inc\VESC_CAN.h
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h

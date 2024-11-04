@@ -42,7 +42,7 @@ extern "C" {
 #include <stdlib.h>
 #include "can.h"
 #include  <math.h>
-#include "VESC_CAN.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -218,5 +218,7 @@ void Error_Handler(void);
 #ifdef __cplusplus
 }
 #endif
+
+
 
 #endif /* __MAIN_H */

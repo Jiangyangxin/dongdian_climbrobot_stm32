@@ -242,7 +242,8 @@ namespace TskEth
         {
             rtn = xSemaphoreTake(ethDealTickSem, ethPeriod + 1);
             configASSERT(rtn);
-
+						
+					
             // unpack control data
             if (pdPASS == xQueueReceive(rawDataQueue, rxDealBuf, 0))
             {
@@ -445,10 +446,10 @@ namespace TskEth
         configASSERT(xMutex != NULL);
         // Create tasks
         rtn = xTaskCreate(ethTransRecvTask, (const portCHAR *)"ethTransRecvTask",
-                          tskStkSize, NULL, osPriorityBelowNormal1, NULL);
+                          tskStkSize, NULL, osPriorityAboveNormal, NULL); //osPriorityBelowNormal1
         configASSERT(rtn == pdPASS);
         rtn = xTaskCreate(ethDealTask, (const portCHAR *)"ethDealTask",
-                          tskStkSize, NULL, osPriorityBelowNormal, NULL);
+                          tskStkSize, NULL, osPriorityAboveNormal, NULL);
         configASSERT(rtn == pdPASS);
     }
 }

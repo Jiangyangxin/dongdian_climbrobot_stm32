@@ -128,19 +128,25 @@ void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
 
     CAN_RxHeaderTypeDef hCAN1_RxHeader;
     HAL_StatusTypeDef	HAL_RetVal;
-    HAL_RetVal=HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &hCAN1_RxHeader, aRxData);
-    if (hcan->Instance == CAN1 && HAL_RetVal== HAL_OK)
+    
+    if (hcan->Instance == CAN1 )
     {
-//        HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &hCAN1_RxHeader, aRxData);
-        if(hCAN1_RxHeader.IDE == CAN_ID_EXT) 
+        HAL_RetVal=HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &hCAN1_RxHeader, aRxData);
+        if(HAL_RetVal== HAL_OK)
         {
-            Frame_rcv.id.all   = hCAN1_RxHeader.ExtId;
-            Frame_rcv.isRemote = hCAN1_RxHeader.RTR == CAN_RTR_DATA ? 0 : 1;
-            Frame_rcv.length   = hCAN1_RxHeader.DLC;
-            memset(Frame_rcv.data.chars, 0, 8);  //先清空再copy
-            memcpy(Frame_rcv.data.chars, aRxData, Frame_rcv.length);
-            ProcessVESCFrame(&Frame_rcv);
+            if(hCAN1_RxHeader.IDE == CAN_ID_EXT) 
+            {
+                Frame_rcv.id.all   = hCAN1_RxHeader.ExtId;
+                Frame_rcv.isRemote = hCAN1_RxHeader.RTR == CAN_RTR_DATA ? 0 : 1;
+                Frame_rcv.length   = hCAN1_RxHeader.DLC;
+                memset(Frame_rcv.data.chars, 0, 8);  //先清空再copy
+                memcpy(Frame_rcv.data.chars, aRxData, Frame_rcv.length);
+                ProcessVESCFrame(&Frame_rcv);
+            }
+
         }
+//        HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &hCAN1_RxHeader, aRxData);
+
         // switch (hCAN1_RxHeader.StdId)
         // {
         // case CAN_Moto1_ID:

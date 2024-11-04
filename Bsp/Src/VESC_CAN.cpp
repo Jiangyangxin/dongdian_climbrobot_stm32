@@ -178,34 +178,54 @@ void ProcessVESCFrame(Frame *Frame_Process)
     }
 }
 
-void VESC_Task(void *pvParameters)
+
+namespace TskVESC
 {
 
-    for(;;)
+   void VESC_Task(void *pvParameters)
 	{
-		if(io_state_cmd==1)
-		comm_can_set_rpm(VESC_SANDING_ID,5000);
-		else
-		comm_can_set_rpm(VESC_SANDING_ID,0);
+
+		while (true)
+		{
+			if(io_state_cmd==1)
+			{
+			comm_can_set_rpm(VESC_SANDING_ID,2000);
+			}
+			else if(io_state_cmd==2)
+			{
+			comm_can_set_rpm(VESC_SANDING_ID,4000);
+			}
+			else if(io_state_cmd==3)
+			{
+			comm_can_set_rpm(VESC_SANDING_ID,5000);
+			}
+			else
+			{
+			comm_can_set_rpm(VESC_SANDING_ID,0);
+			}
+			vTaskDelay(1); //portTICK_RATE_MS=1000  挂起1ms
+		}
+
+		
+			/* 安全起见，如果程序由于异常执行到这，则删除当前任务 */
+//			vTaskDelete( NULL );
+
+		
 	}
 
-	
-    /* 安全起见，如果程序由于异常执行到这，则删除当前任务 */
-    vTaskDelete( NULL );
+
+	void VESC_SANDING_INIT()
+	{
+		const int tskStkSize = 512;
+		BaseType_t rtn;
+		CAN_Start_Trans();
+		comm_can_set_current(VESC_SANDING_ID,0);
+		// Create tasks
+		rtn = xTaskCreate(VESC_Task, (const portCHAR *)"VESC_Task",
+							tskStkSize, NULL, osPriorityNormal3, NULL); //Priority值越小，任务的执行优先级就越低
+
+		configASSERT(rtn == pdPASS);
+
+	}
 
 }
-
-
-void VESC_SANDING_INIT()
-{
-	const int tskStkSize = 512;
-	BaseType_t rtn;
-	CAN_Start_Trans();
-	comm_can_set_current(VESC_SANDING_ID,0);
-	// Create tasks
-	rtn = xTaskCreate(VESC_Task, (const portCHAR *)"VESC_Task",
-						tskStkSize, NULL, osPriorityAboveNormal, NULL); //Priority值越小，任务的执行优先级就越低
-	configASSERT(rtn == pdPASS);
-
-}
-

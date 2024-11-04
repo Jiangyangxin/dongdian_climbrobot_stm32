@@ -1,4 +1,4 @@
-robot_f103ret6/vesc_can.o: ..\Bsp\Src\VESC_CAN.c ..\Bsp\Inc\VESC_CAN.h \
+robot_f103ret6/vesc_can.o: ..\Bsp\Src\VESC_CAN.cpp ..\Bsp\Inc\VESC_CAN.h \
   ..\Core\Inc\main.h ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Core\Inc\stm32f1xx_hal_conf.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h \
@@ -6,6 +6,8 @@ robot_f103ret6/vesc_can.o: ..\Bsp\Src\VESC_CAN.c ..\Bsp\Inc\VESC_CAN.h \
   ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xe.h \
   ..\Drivers\CMSIS\Include\core_cm3.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Drivers\CMSIS\Include\cmsis_version.h \
   ..\Drivers\CMSIS\Include\cmsis_compiler.h \
@@ -14,7 +16,9 @@ robot_f103ret6/vesc_can.o: ..\Bsp\Src\VESC_CAN.c ..\Bsp\Inc\VESC_CAN.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
   ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\stddef.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__nullptr \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h \
@@ -48,7 +52,17 @@ robot_f103ret6/vesc_can.o: ..\Bsp\Src\VESC_CAN.c ..\Bsp\Inc\VESC_CAN.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\stdio.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\string.h \
-  D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdlib.h ..\Bsp\Inc\can.h \
-  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\math.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\math.h \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\type_traits \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\cstddef \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
+  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
+  ..\Bsp\Inc\can.h
