@@ -34,7 +34,7 @@ const float fanStep = 10.f;
 const float PI = 3.1415926536f;
 const float PI_2 = (PI / 2.f);
 // 负压测量
-const float barometerCoeff = 20.f / 4.5f;
+const float barometerCoeff = 40.f / 4.0f;
 const float adcResolution = 3.3f / 4095.f;
 const float barometerOffset = 2.25f;
 
@@ -145,9 +145,9 @@ const float vVelPidI = 100.f;
 const float vVelPidD = 4.f;
 const float vVelPidIband = 1000.0f; // 0.1m/s对应2000
 
-const float fanP = 110.f;
-const float fanI = 130.f;
-const float fanIBand = 3.f;
+const float fanP = 100.f;
+const float fanI = 90.f;
+const float fanIBand = 18.f;
 
 // 吸附单元PID参数
 struct PidParam
