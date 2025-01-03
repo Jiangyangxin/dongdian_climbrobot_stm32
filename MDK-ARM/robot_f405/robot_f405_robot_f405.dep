@@ -1583,7 +1583,7 @@ I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
 I (..\Bsp\Inc\can.h)(0x65F6C520)
-F (..\App\Src\default_start_tsk.cpp)(0x676BEBA8)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f405-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o robot_f405/default_start_tsk.o -MD)
+F (..\App\Src\default_start_tsk.cpp)(0x67767541)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f405-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o robot_f405/default_start_tsk.o -MD)
 I (..\Core\Inc\main.h)(0x676BA626)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x65959256)
 I (..\Core\Inc\stm32f4xx_hal_conf.h)(0x66C7504C)
@@ -1670,7 +1670,8 @@ I (..\App\Inc\cmd_tsk.h)(0x660462D0)
 I (..\Bsp\Inc\at24cxx.h)(0x66C757FC)
 I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stdbool.h)(0x5E0BB2B8)
 I (D:\Keil5\ARM\ARMCLANG\include\stdbool.h)(0x5DDFFD72)
-F (..\App\Src\ethernet_data_tsk.cpp)(0x676BEDCA)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f405-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o robot_f405/ethernet_data_tsk.o -MD)
+I (..\Bsp\Inc\VESC_CAN.h)(0x672D9D24)
+F (..\App\Src\ethernet_data_tsk.cpp)(0x677674DF)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f405-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o robot_f405/ethernet_data_tsk.o -MD)
 I (..\App\Inc\ethernet_tsk.h)(0x676BA233)
 I (..\Core\Inc\main.h)(0x676BA626)
 I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x65959256)
@@ -2062,3 +2063,75 @@ I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
 I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
 I (..\Bsp\Inc\can.h)(0x65F6C520)
 I (..\App\Inc\cmd_tsk.h)(0x660462D0)
+F (..\Bsp\Src\VESC_CAN.cpp)(0x6768C176)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar -fno-exceptions-gdwarf-3 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Bsp/Inc -I ../Drivers/EthDriver/Ethernet -I ../App/Inc-I./RTE/_robot_f405-ID:/Keil5/Pack/ARM/CMSIS/5.7.0/CMSIS/Core/Include-ID:/Keil5/Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="530" -D_RTE_ -DSTM32F405xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F405xx-o robot_f405/vesc_can.o -MD)
+I (..\Bsp\Inc\VESC_CAN.h)(0x672D9D24)
+I (..\Core\Inc\main.h)(0x676BA626)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x65959256)
+I (..\Core\Inc\stm32f4xx_hal_conf.h)(0x66C7504C)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x65959256)
+I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x65959254)
+I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f405xx.h)(0x65959254)
+I (..\Drivers\CMSIS\Include\core_cm4.h)(0x65959256)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__config)(0x5E3336D2)
+I (D:\Keil5\ARM\ARMCLANG\include\stdint.h)(0x5DDFFD72)
+I (..\Drivers\CMSIS\Include\cmsis_version.h)(0x65959256)
+I (..\Drivers\CMSIS\Include\cmsis_compiler.h)(0x65959256)
+I (..\Drivers\CMSIS\Include\cmsis_armclang.h)(0x65959256)
+I (..\Drivers\CMSIS\Include\mpu_armv7.h)(0x65959256)
+I (..\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x65959254)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x65959256)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stddef.h)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\stddef.h)(0x5DDFFD72)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__nullptr)(0x5E0BB2B8)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_can.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x65959256)
+I (..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x65959256)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h)(0x65959258)
+I (..\Core\Inc\FreeRTOSConfig.h)(0x676B9ED8)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\portable.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\deprecated_definitions.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\mpu_wrappers.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\task.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\list.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\CMSIS_RTOS_V2\cmsis_os2.h)(0x65959258)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\queue.h)(0x65959258)
+I (D:\Keil5\ARM\ARMCLANG\include\stdarg.h)(0x5DDFFD72)
+I (..\Middlewares\Third_Party\FreeRTOS\Source\include\semphr.h)(0x65959258)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stdio.h)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\stdio.h)(0x5DDFFD72)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\string.h)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\string.h)(0x5DDFFD6C)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\stdlib.h)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\stdlib.h)(0x5DDFFD6A)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\math.h)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\math.h)(0x5DDFFD6C)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\type_traits)(0x5E28C6CC)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\cstddef)(0x5E0BB2B6)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\version)(0x5E3336D2)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\limits)(0x5E0BB2B8)
+I (D:\Keil5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5E0BB2B8)
+I (..\Bsp\Inc\can.h)(0x65F6C520)

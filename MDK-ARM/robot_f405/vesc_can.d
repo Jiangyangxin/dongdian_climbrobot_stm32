@@ -1,4 +1,4 @@
-robot_f405/default_start_tsk.o: ..\App\Src\default_start_tsk.cpp \
+robot_f405/vesc_can.o: ..\Bsp\Src\VESC_CAN.cpp ..\Bsp\Inc\VESC_CAN.h \
   ..\Core\Inc\main.h ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h \
@@ -69,14 +69,4 @@ robot_f405/default_start_tsk.o: ..\App\Src\default_start_tsk.cpp \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Bsp\Inc\can.h ..\Bsp\Inc\w5500_dev.h \
-  ..\Drivers\EthDriver\Ethernet\socket.h \
-  ..\Drivers\EthDriver\Ethernet\wizchip_conf.h \
-  ..\Drivers\EthDriver\Ethernet\W5500\w5500.h \
-  ..\Drivers\EthDriver\Ethernet\wizchip_conf.h ..\App\Inc\ethernet_tsk.h \
-  ..\App\Inc\adsorption_fan_tsk.h ..\Bsp\Inc\pid.h \
-  ..\Core\Inc\physparams.h ..\App\Inc\adsorption_motion_tsk.h \
-  ..\Bsp\Inc\feedForwardPid.h ..\Bsp\Inc\stagePid.h \
-  ..\App\Inc\steerwheel_tsk.h ..\App\Inc\cmd_tsk.h ..\Bsp\Inc\at24cxx.h \
-  D:\Keil5\ARM\ARMCLANG\Bin\..\include\libcxx\stdbool.h \
-  D:\Keil5\ARM\ARMCLANG\Bin\..\include\stdbool.h ..\Bsp\Inc\VESC_CAN.h
+  ..\Bsp\Inc\can.h

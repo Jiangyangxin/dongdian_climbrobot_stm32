@@ -7,7 +7,7 @@
 #include "cmd_tsk.h"
 #include <string.h>
 #include "at24cxx.h"
-
+#include "VESC_CAN.h"
 char dbgStr[CMD_BUF_SIZE];
 uint8_t cmdRxBuf[CMD_BUF_SIZE];
 uint8_t cmdTxBuf[CMD_BUF_SIZE];
@@ -376,6 +376,7 @@ void StartDefaultTask(void *argument)
             else if (cmdEthInfo.type == BoardType::ioState)
             {
                 MX_IO_Init();
+							TskVESC::VESC_SANDING_INIT();
             }
             // check task to ethernet 5001 recv task, DO NOT deal uart cmd!
             res = 0xF;

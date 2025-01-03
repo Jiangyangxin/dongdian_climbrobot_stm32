@@ -698,6 +698,11 @@
               <FileType>1</FileType>
               <FilePath>..\Bsp\Src\w5500_dev.c</FilePath>
             </File>
+            <File>
+              <FileName>VESC_CAN.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Bsp\Src\VESC_CAN.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
