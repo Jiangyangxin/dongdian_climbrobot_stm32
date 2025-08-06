@@ -1,0 +1,360 @@
+<mxfile host="65bd71144e">
+    <diagram id="ohtxf8ooDukWDL8UA59n" name="用户接口">
+        <mxGraphModel dx="1456" dy="569" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="2" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="串口调试&lt;br&gt;115200,1,8,无校验&amp;nbsp;" style="whiteSpace=wrap;html=1;fillColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;labelBackgroundColor=#FFFFFF;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="edgeStyle=none;html=1;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="网络控制&lt;br&gt;默认ip 192.168.0.199" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="250" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="5000端口，周期上传运动数据，接收运动控制指令" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="255" y="250" width="275" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="加载默认配置启动网络后，开放5001端口，接收网络配置信息，重启后生效，也支持打印调试信息(eprint)" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="255" y="140" width="275" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="endArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="3" target="6" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="100" y="240" as="sourcePoint"/>
+                        <mxPoint x="280" y="150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="100" y="170"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="上电后等待网络配置信息输入，超时将使用默认配置，后续不接受输入指令，仅支持打印调试信息(print)" style="whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="255" y="50" width="275" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="注：局域网内ip适配" style="text;strokeColor=#FFFFFF;fillColor=#FFFFFF;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;labelBackgroundColor=#FFFFFF;fontColor=#18141d;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="120" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="chRvoj6G1johuvrj20Su" name="流程图">
+        <mxGraphModel dx="923" dy="569" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-1" value="" style="edgeStyle=none;html=1;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="MOcRL4gqm7Q1tkeLXflA-2" target="MOcRL4gqm7Q1tkeLXflA-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-2" value="系统上电" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="257" y="410" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-3" value="指令输入" style="edgeStyle=none;html=1;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="MOcRL4gqm7Q1tkeLXflA-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="307" y="640.0000000000002" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="307" y="610"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-4" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="MOcRL4gqm7Q1tkeLXflA-6" target="MOcRL4gqm7Q1tkeLXflA-11" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="207" y="570" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="217" y="550"/>
+                            <mxPoint x="217" y="790"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-5" value="超时" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="MOcRL4gqm7Q1tkeLXflA-4" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0348" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-6" value="串口指令&lt;br&gt;输入？&lt;br&gt;超时？" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="267" y="510" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-7" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="MOcRL4gqm7Q1tkeLXflA-10" target="MOcRL4gqm7Q1tkeLXflA-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="417" y="680"/>
+                            <mxPoint x="417" y="550"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-8" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="MOcRL4gqm7Q1tkeLXflA-7" vertex="1" connectable="0">
+                    <mxGeometry x="0.079" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-9" value="是" style="edgeStyle=none;html=1;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" source="MOcRL4gqm7Q1tkeLXflA-10" target="MOcRL4gqm7Q1tkeLXflA-11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-10" value="指令有效？" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="267" y="640" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-11" value="加载配置，启动网络服务，初始化控制板类型" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="247" y="760" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-12" value="5000网络端口&lt;br&gt;收发运动控制数据" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="920" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-13" value="5001网络端口&lt;br&gt;收网络配置指令&lt;br&gt;发调试信息" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="195" y="920" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-14" value="运动控制任务&lt;br&gt;1. 舵轮&lt;br&gt;2. 主动吸附单元&lt;br&gt;3. 风机（普通吸附）&lt;br&gt;4. io扩展板" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fillColor=#FFFFFF;fontColor=#333333;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="920" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-15" value="串口任务&lt;br&gt;打印调试信息" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="505" y="920" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-16" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" target="MOcRL4gqm7Q1tkeLXflA-11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="307" y="870.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="315" y="830" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-17" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" target="MOcRL4gqm7Q1tkeLXflA-13" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="255.00000000000023" y="870.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="415" y="830" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-18" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="404.65999999999985" y="870.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="404.65999999999985" y="920.0000000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-19" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" target="MOcRL4gqm7Q1tkeLXflA-15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="565" y="870.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="415" y="830" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-20" value="" style="endArrow=none;html=1;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="95.00000000000023" y="870.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="565" y="870.0000000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="MOcRL4gqm7Q1tkeLXflA-21" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endSize=6;labelBackgroundColor=#FFFFFF;fontColor=#18141d;strokeColor=#000000;fillColor=#FFFFFF;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="95.00000000000023" y="870.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="95.00000000000023" y="920.0000000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="ethernet_data_tsk 数据流" id="adSfjbnfxt3pq8YIlLKC">
+        <mxGraphModel dx="1456" dy="569" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="Kk-vOfwJThrjiM_G4cRN-0"/>
+                <mxCell id="Kk-vOfwJThrjiM_G4cRN-1" parent="Kk-vOfwJThrjiM_G4cRN-0"/>
+                <mxCell id="pakI7p5kZILFG5nCoN70-1" value="5000网络端口&lt;br&gt;数据收发任务" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="Kk-vOfwJThrjiM_G4cRN-1" vertex="1">
+                    <mxGeometry x="168" y="96" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-0" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="Kk-vOfwJThrjiM_G4cRN-1" target="pakI7p5kZILFG5nCoN70-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="55" y="116" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-1" value="用户输入" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="_fMo00mfc5dS1a8ilv4A-0" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="16" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-3" value="5000网络端口&lt;br&gt;数据处理任务" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="Kk-vOfwJThrjiM_G4cRN-1" vertex="1">
+                    <mxGeometry x="398" y="96" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-7" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="Kk-vOfwJThrjiM_G4cRN-1" source="pakI7p5kZILFG5nCoN70-1" target="_fMo00mfc5dS1a8ilv4A-3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="280" y="135.5" as="sourcePoint"/>
+                        <mxPoint x="353" y="135.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-8" value="rawDataQueue&lt;br&gt;待解包" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="_fMo00mfc5dS1a8ilv4A-7" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="19" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-11" value="" style="edgeStyle=none;html=1;strokeColor=#000000;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="Kk-vOfwJThrjiM_G4cRN-1" source="_fMo00mfc5dS1a8ilv4A-3" target="_fMo00mfc5dS1a8ilv4A-14" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="518" y="135.66" as="sourcePoint"/>
+                        <mxPoint x="629" y="135" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-12" value="typeCmdQueue&lt;br&gt;待执行" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="_fMo00mfc5dS1a8ilv4A-11" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="19" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-13" value="type: 1.steer 2. adsorption&amp;amp;fan 3. fan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;fontColor=#000000;" parent="Kk-vOfwJThrjiM_G4cRN-1" vertex="1">
+                    <mxGeometry x="589" y="178" width="207" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-14" value="控制板类型对应的控制任务" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="Kk-vOfwJThrjiM_G4cRN-1" vertex="1">
+                    <mxGeometry x="628" y="96" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-15" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="Kk-vOfwJThrjiM_G4cRN-1" source="_fMo00mfc5dS1a8ilv4A-3" target="_fMo00mfc5dS1a8ilv4A-14" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="515" y="156" as="sourcePoint"/>
+                        <mxPoint x="628" y="157" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-16" value="typeValQueue&lt;br&gt;待打包" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="_fMo00mfc5dS1a8ilv4A-15" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="19" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-17" value="" style="edgeStyle=none;html=1;strokeColor=#000000;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="Kk-vOfwJThrjiM_G4cRN-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="158" as="sourcePoint"/>
+                        <mxPoint x="398" y="158" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-18" value="sendDataQueue&lt;br&gt;待发送" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="_fMo00mfc5dS1a8ilv4A-17" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-21" value="" style="edgeStyle=none;html=1;strokeColor=#000000;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="Kk-vOfwJThrjiM_G4cRN-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="58" y="158" as="sourcePoint"/>
+                        <mxPoint x="168" y="158" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="_fMo00mfc5dS1a8ilv4A-22" value="反馈信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="_fMo00mfc5dS1a8ilv4A-21" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="can 数据流" id="0obOrGAI_mChKJhECH2p">
+        <mxGraphModel dx="1456" dy="569" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-0"/>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-1" parent="hxWmOjNW4BSWbhVNJJqx-0"/>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-2" value="" style="edgeStyle=none;html=1;strokeColor=#000000;startArrow=classic;startFill=1;endArrow=none;endFill=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="hxWmOjNW4BSWbhVNJJqx-1" source="hxWmOjNW4BSWbhVNJJqx-20" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="555" y="305" as="sourcePoint"/>
+                        <mxPoint x="677" y="304" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-3" value="零点信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="hxWmOjNW4BSWbhVNJJqx-2" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-20" value="舵轮控制任务&lt;br&gt;吸附单元控制任务&lt;br&gt;" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="hxWmOjNW4BSWbhVNJJqx-1" vertex="1">
+                    <mxGeometry x="435" y="245" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-21" value="can接收回调函数&lt;br&gt;参数更新" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="hxWmOjNW4BSWbhVNJJqx-1" vertex="1">
+                    <mxGeometry x="168" y="247" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-22" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1.002;exitY=0.18;exitDx=0;exitDy=0;exitPerimeter=0;" parent="hxWmOjNW4BSWbhVNJJqx-1" source="hxWmOjNW4BSWbhVNJJqx-21" target="hxWmOjNW4BSWbhVNJJqx-20" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="288" y="265.00000000000006" as="sourcePoint"/>
+                        <mxPoint x="398" y="264.99999999999994" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-23" value="can1RxQueueHandle&lt;br&gt;发送对应电机的信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="hxWmOjNW4BSWbhVNJJqx-22" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="23" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-24" value="" style="edgeStyle=none;html=1;strokeColor=#000000;exitX=1;exitY=0.75;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="hxWmOjNW4BSWbhVNJJqx-1" source="hxWmOjNW4BSWbhVNJJqx-21" target="hxWmOjNW4BSWbhVNJJqx-20" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="324" y="308" as="sourcePoint"/>
+                        <mxPoint x="434" y="308" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-25" value="reset_flag&lt;br&gt;清除对应电机的累计值" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="hxWmOjNW4BSWbhVNJJqx-24" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-26" value="" style="edgeStyle=none;html=1;strokeColor=#000000;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="hxWmOjNW4BSWbhVNJJqx-1" source="hxWmOjNW4BSWbhVNJJqx-20" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="561" y="267" as="sourcePoint"/>
+                        <mxPoint x="677" y="264" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hxWmOjNW4BSWbhVNJJqx-27" value="更新控制量" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="hxWmOjNW4BSWbhVNJJqx-26" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="23" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram name="调式接口数据流" id="wpnCcUGIbRIpTte4XO8L">
+        <mxGraphModel dx="1456" dy="569" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="zHfQeUge20f5Q44aIlhp-0"/>
+                <mxCell id="zHfQeUge20f5Q44aIlhp-1" parent="zHfQeUge20f5Q44aIlhp-0"/>
+                <mxCell id="zHfQeUge20f5Q44aIlhp-2" value="5001网络端口&lt;br&gt;数据发送任务" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="zHfQeUge20f5Q44aIlhp-1" vertex="1">
+                    <mxGeometry x="168" y="96" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="zHfQeUge20f5Q44aIlhp-3" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="zHfQeUge20f5Q44aIlhp-1" target="zHfQeUge20f5Q44aIlhp-2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="55" y="136" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zHfQeUge20f5Q44aIlhp-4" value="dbgQueue&lt;br&gt;调试信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="zHfQeUge20f5Q44aIlhp-3" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="16" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7Q2IYfdps_dsRSVA2NhV-0" value="串口&lt;br&gt;数据发送任务" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="zHfQeUge20f5Q44aIlhp-1" vertex="1">
+                    <mxGeometry x="445" y="96" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7Q2IYfdps_dsRSVA2NhV-1" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="zHfQeUge20f5Q44aIlhp-1" target="7Q2IYfdps_dsRSVA2NhV-0" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="332" y="136" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7Q2IYfdps_dsRSVA2NhV-2" value="TskPrint::MbCmd&lt;br&gt;调试信息" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="7Q2IYfdps_dsRSVA2NhV-1" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="16" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="hLAX8YpQOs5mvvcGTdka-0" value="低优先级，空闲时发送" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;labelBackgroundColor=#ffffff;fontColor=#000000;" parent="zHfQeUge20f5Q44aIlhp-1" vertex="1">
+                    <mxGeometry x="266" y="51" width="207" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Uj2duPDq-adUp6J6JLSy-0" value="串口接收回调函数" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="zHfQeUge20f5Q44aIlhp-1" vertex="1">
+                    <mxGeometry x="168" y="255" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="SQK4Av3QCimVrAyX5nTG-0" value="" style="edgeStyle=none;html=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="zHfQeUge20f5Q44aIlhp-1" target="Uj2duPDq-adUp6J6JLSy-0" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="48" y="296" as="sourcePoint"/>
+                        <mxPoint x="163" y="299" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SQK4Av3QCimVrAyX5nTG-1" value="用户输入" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="SQK4Av3QCimVrAyX5nTG-0" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="16" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SQK4Av3QCimVrAyX5nTG-2" value="" style="edgeStyle=none;html=1;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="zHfQeUge20f5Q44aIlhp-1" source="Uj2duPDq-adUp6J6JLSy-0" target="SQK4Av3QCimVrAyX5nTG-4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="287.9999999999999" y="295.50000000000006" as="sourcePoint"/>
+                        <mxPoint x="445" y="295" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SQK4Av3QCimVrAyX5nTG-3" value="TskPrint::uartDMAQueue&lt;br&gt;待解析" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;fontColor=#000000;" parent="SQK4Av3QCimVrAyX5nTG-2" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3425" relative="1" as="geometry">
+                        <mxPoint x="23" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="SQK4Av3QCimVrAyX5nTG-4" value="default_start_tsk任务&lt;br&gt;处理网络配置信息" style="whiteSpace=wrap;html=1;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontColor=#333333;fillColor=#FFFFFF;strokeColor=#000000;" parent="zHfQeUge20f5Q44aIlhp-1" vertex="1">
+                    <mxGeometry x="445" y="255" width="120" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
